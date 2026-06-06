@@ -1,79 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dalziel High School Computing Science</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #4B2E83;
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
+<title>Dalziel High School Computing Science</title>
 
-        header {
-            padding: 40px 20px;
-        }
+<style>
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
 
-        h2 {
-            font-weight: normal;
-            margin-bottom: 50px;
-        }
+header{
+    background:#4B2E83;
+    color:white;
+    padding:40px;
+    text-align:center;
+    border-bottom:5px solid #F2C94C;
+}
 
-        .container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
+header h1{
+    margin:0;
+    font-size:3rem;
+}
 
-        .button {
-            background-color: white;
-            color: #4B2E83;
-            text-decoration: none;
-            padding: 25px 50px;
-            border-radius: 10px;
-            font-size: 1.5em;
-            font-weight: bold;
-            transition: 0.3s;
-            min-width: 200px;
-        }
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
 
-        .button:hover {
-            background-color: #dddddd;
-        }
+main{
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px;
+}
 
-        footer {
-            margin-top: 80px;
-            padding: 20px;
-            font-size: 0.9em;
-        }
-    </style>
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:320px;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.card h2{
+    color:#4B2E83;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    background:#F2C94C;
+    color:#000;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#ddb73f;
+}
+
+footer{
+    margin-top:60px;
+    background:#4B2E83;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Dalziel High School</h1>
-        <h2>Computing Science Revision Hub</h2>
-    </header>
+<header>
+    <h1>Dalziel High School</h1>
+    <p>Computing Science Revision Hub</p>
+</header>
 
-    <div class="container">
-        <a href="n5.html" class="button">National 5</a>
-        <a href="higher.html" class="button">Higher</a>
+<main>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>National 5</h2>
+            <p>
+                Revision notes, quizzes, practice questions,
+                past paper support and topic tests.
+            </p>
+
+            <a href="n5.html" class="button">
+                Enter N5 Revision
+            </a>
+        </div>
+
+        <div class="card">
+            <h2>Higher</h2>
+            <p>
+                Revision materials, theory questions,
+                programming challenges and exam preparation.
+            </p>
+
+            <a href="higher.html" class="button">
+                Enter Higher Revision
+            </a>
+        </div>
+
     </div>
 
-    <footer>
-        © Dalziel High School Computing Science Department
-    </footer>
+</main>
+
+<footer>
+    Dalziel High School Computing Science Department
+</footer>
 
 </body>
 </html>
