@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,40 +15,47 @@ body{
     background:#3333FF;
 }
 
+/* Sidebar */
+
 .sidebar{
     position:fixed;
     left:0;
     top:0;
-    width:220px;
+    width:180px;
     height:100%;
-    background:#ffffff;
-    border-right:5px solid #F2C94C;
+    background:#3333FF;
+    border-right:3px solid #F2C94C;
     padding-top:20px;
     box-sizing:border-box;
 }
 
 .sidebar h2{
     text-align:center;
-    color:#3333FF;
+    color:#FFFFFF;
     margin-bottom:30px;
+    font-size:1.3rem;
 }
 
 .sidebar a{
     display:block;
     padding:15px 20px;
-    color:#3333FF;
+    color:#FFFFFF;
     text-decoration:none;
     font-weight:bold;
+    transition:0.3s;
 }
 
 .sidebar a:hover{
     background:#F2C94C;
+    color:#000000;
 }
 
+/* Main Content */
+
 .content{
-    margin-left:240px;
-}    
-    
+    margin-left:200px;
+}
+
 header{
     background:#ffffff;
     padding:30px;
@@ -110,17 +118,19 @@ footer{
 </head>
 
 <body>
+
 <div class="sidebar">
 
     <h2>DHS CS</h2>
 
-    <a href="index.html">🏠 Home</a>
-    <a href="n5.html">📚 National 5</a>
-    <a href="higher.html">🎓 Higher</a>
+    <a href="index.html">Home</a>
+    <a href="n5.html">National 5</a>
+    <a href="higher.html">Higher</a>
 
 </div>
 
 <div class="content">
+
 <header>
     <h1>National 5 Computing Science</h1>
 </header>
@@ -195,13 +205,14 @@ footer{
         </ul>
     </div>
 
-
 </main>
 
 <footer>
 Dalziel High School Computing Science
 </footer>
 
+</div>
+
 </body>
-    </div>
 </html>
+```
