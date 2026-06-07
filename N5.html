@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -45,6 +44,13 @@ main{
     color:#3333FF;
 }
 
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
 .button{
     display:inline-block;
     background:#F2C94C;
@@ -53,6 +59,11 @@ main{
     padding:12px 25px;
     border-radius:5px;
     font-weight:bold;
+    text-align:center;
+}
+
+.button:hover{
+    background:#ddb73f;
 }
 
 footer{
@@ -62,7 +73,6 @@ footer{
 }
 
 </style>
-
 </head>
 
 <body>
@@ -73,91 +83,75 @@ footer{
 
 <main>
 
-<div class="card">
-    <h2>Welcome to National 5 Computing Science</h2>
-    <p>
-        Select a topic below to access revision notes, practice questions,
-        quizzes and exam-style assessments.
-    </p>
-</div>
+    <div class="card">
+        <h2>Welcome to National 5 Computing Science</h2>
+        <p>
+            Use this page to access revision notes, topic quizzes,
+            exam-style questions and assignment support.
+        </p>
+    </div>
 
-<div class="card">
-    <h2>Course Topics</h2>
+    <div class="card">
+        <h2>Course Topics</h2>
 
-```
-<div style="display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-            margin-top:20px;">
+        <div class="grid">
+            <a href="computer-systems.html" class="button">Computer Systems</a>
+            <a href="sdd.html" class="button">Software Design & Development</a>
+            <a href="database-design.html" class="button">Database Design</a>
+            <a href="assignment-support.html" class="button">Assignment Support</a>
+        </div>
+    </div>
 
-    <a href="computer-systems.html" class="button" style="text-align:center;">
-        Computer Systems
-    </a>
+    <div class="card">
+        <h2>Assessment & Exam Practice</h2>
 
-    <a href="sdd.html" class="button" style="text-align:center;">
-        Software Design & Development
-    </a>
+        <div class="grid">
+            <a href="topic-quizzes.html" class="button">Topic Quizzes</a>
+            <a href="past-paper-questions.html" class="button">Past Paper Questions</a>
+            <a href="exam-practice.html" class="button">Exam Practice</a>
+        </div>
+    </div>
 
-    <a href="database-design.html" class="button" style="text-align:center;">
-        Database Design
-    </a>
+    <div class="card">
+        <h2>Course Breakdown</h2>
 
-    <a href="web-design.html" class="button" style="text-align:center;">
-        Web Design
-    </a>
+        <h3>Computer Systems</h3>
+        <ul>
+            <li>Data Representation</li>
+            <li>Computer Structure</li>
+            <li>System Software</li>
+            <li>Networks</li>
+            <li>Cyber Security</li>
+        </ul>
 
-</div>
-```
+        <h3>Software Design & Development</h3>
+        <ul>
+            <li>Analysis</li>
+            <li>Design</li>
+            <li>Implementation</li>
+            <li>Testing</li>
+            <li>Documentation</li>
+        </ul>
 
-</div>
+        <h3>Database Design</h3>
+        <ul>
+            <li>Data Types</li>
+            <li>Entity Relationship Diagrams</li>
+            <li>Database Structure</li>
+            <li>SQL</li>
+        </ul>
 
-<div class="card">
-    <h2>Assessment & Exam Practice</h2>
+        <h3>Assignment Support</h3>
+        <ul>
+            <li>Analysis</li>
+            <li>Design</li>
+            <li>Implementation</li>
+            <li>Testing</li>
+            <li>Evaluation</li>
+        </ul>
+    </div>
 
-```
-<div style="display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-            margin-top:20px;">
-
-    <a href="topic-quizzes.html" class="button" style="text-align:center;">
-        Topic Quizzes
-    </a>
-
-    <a href="exam-practice.html" class="button" style="text-align:center;">
-        Exam Practice
-    </a>
-
-    <a href="past-paper-questions.html" class="button" style="text-align:center;">
-        Past Paper Questions
-    </a>
-
-</div>
-```
-
-</div>
-
-<div class="card">
-    <h2>Course Information</h2>
-
-```
-<p>
-    The National 5 Computing Science course consists of:
-</p>
-
-<ul>
-    <li>Computer Systems</li>
-    <li>Software Design & Development</li>
-    <li>Database Design</li>
-    <li>Web Design</li>
-    <li>Practical Assignment</li>
-</ul>
-```
-
-</div>
-
-<a href="index.html" class="button">Back to Home</a>
-
+    <a href="index.html" class="button">Back to Home</a>
 
 </main>
 
