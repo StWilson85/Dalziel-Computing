@@ -14,6 +14,40 @@ body{
     background:#3333FF;
 }
 
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:220px;
+    height:100%;
+    background:#ffffff;
+    border-right:5px solid #F2C94C;
+    padding-top:20px;
+    box-sizing:border-box;
+}
+
+.sidebar h2{
+    text-align:center;
+    color:#3333FF;
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 20px;
+    color:#3333FF;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.sidebar a:hover{
+    background:#F2C94C;
+}
+
+.content{
+    margin-left:240px;
+}    
+    
 header{
     background:#ffffff;
     padding:30px;
@@ -76,7 +110,17 @@ footer{
 </head>
 
 <body>
+<div class="sidebar">
 
+    <h2>DHS CS</h2>
+
+    <a href="index.html">🏠 Home</a>
+    <a href="n5.html">📚 National 5</a>
+    <a href="higher.html">🎓 Higher</a>
+
+</div>
+
+<div class="content">
 <header>
     <h1>National 5 Computing Science</h1>
 </header>
@@ -151,7 +195,6 @@ footer{
         </ul>
     </div>
 
-    <a href="index.html" class="button">Back to Home</a>
 
 </main>
 
@@ -160,4 +203,5 @@ Dalziel High School Computing Science
 </footer>
 
 </body>
+    </div>
 </html>
