@@ -116,3 +116,15 @@ footer{
     color:#3333FF;
     padding:20px;
 }
+
+.topic-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:20px;
+}
+
+.topic-button{
+    width:100%;
+    box-sizing:border-box;
+}
